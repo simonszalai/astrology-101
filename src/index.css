@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cosmos: #08080f;
+  --color-void: #10101c;
+  --color-nebula: #1a1a2e;
+  --color-surface: #1e1e30;
+  --color-star: #e0e0e8;
+  --color-star-dim: #8888a0;
+  --color-ecliptic: #d4a056;
+  --color-equator: #4a7dff;
+  --color-accent: #7c6df0;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--color-cosmos);
+  color: var(--color-star);
+  font-family: var(--font-sans);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-nebula);
+  border-radius: 2px;
+}
